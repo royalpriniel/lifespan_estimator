@@ -26,6 +26,7 @@ const LifespanEstimator = () => {
 
     setResults(stats);
   };
+     const inputStyle = {{ borderRadius: '0.5rem', height: '2.5rem'}};
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '500px' }}>
@@ -46,7 +47,8 @@ However, we work with 100 years as being the maximum lifespan of humans because 
             <input 
               type="text" 
               value={userName} 
-              onChange={(e) => setUserName(e.target.value)} 
+              onChange={(e) => setUserName(e.target.value)}
+              style={inputStyle} 
               required 
             />
           </div>
@@ -56,7 +58,8 @@ However, we work with 100 years as being the maximum lifespan of humans because 
             <input 
               type="number" 
               value={userAge} 
-              onChange={(e) => setUserAge(e.target.value)} 
+              onChange={(e) => setUserAge(e.target.value)}
+              style={inputStyle}  
               required 
             />
           </div>
@@ -82,7 +85,8 @@ However, we work with 100 years as being the maximum lifespan of humans because 
             min="1" 
             max="10" 
             value={feedback} 
-            onChange={(e) => setFeedback(e.target.value)} 
+            onChange={(e) => setFeedback(e.target.value)}
+            style={inputStyle}  
           />
           <button onClick={() => console.log("User Feedback:", feedback)}>
             Submit Feedback
