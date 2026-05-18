@@ -38,7 +38,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
 
       {!results ? (
         <form onSubmit={calculateTimeLeft}>
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px', marginTop: '10px' }}>
             <label>What's your name? </label>
             <input 
               type="text" 
