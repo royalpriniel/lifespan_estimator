@@ -101,6 +101,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
             Reset
           </button>
         </div>
+        </div>
       )}
     </div>
   );
