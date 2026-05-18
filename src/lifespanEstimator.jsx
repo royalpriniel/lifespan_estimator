@@ -26,7 +26,7 @@ const LifespanEstimator = () => {
 
     setResults(stats);
   };
-     const inputStyle = {{ borderRadius: '0.5rem', height: '2.5rem'}};
+     const inputStyle = { borderRadius: '0.5rem', height: '2.5rem'};
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '500px' }}>
