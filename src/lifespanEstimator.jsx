@@ -77,7 +77,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
             <strong> {results.years}</strong> years left to live and prosper and thrive.
           </p>
           <p><em>It may not be more. It may even be much less. Use your time wisely.</em></p>
-          
+          </div>
           <hr />
           
           <label>How did we do on a scale of 1 to 10? </label>
@@ -100,7 +100,6 @@ However, we work with 100 years as being the maximum lifespan of humans because 
           >
             Reset
           </button>
-        </div>
         </div>
       )}
     </div>
