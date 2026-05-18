@@ -35,6 +35,9 @@ const LifespanEstimator = () => {
 It assumes that the likely maximum lifespan of most humans is 100 years or highest of all, about 120 years, as proven by well studied statistics and human history, and as stated by the bible.
 However, we work with 100 years as being the maximum lifespan of humans because "100" is a maximum number and even in human history, that has been so for most people.
       </p>
+      <br/>
+
+      <hr/>
 
       {!results ? (
         <form onSubmit={calculateTimeLeft}>
