@@ -80,7 +80,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
           </div>
           <hr />
           
-          <label>How did we do on a scale of 1 to 10? </label>
+          <label style={{margin: '2rem 0'}}>How did we do on a scale of 1 to 10? </label>
           <input 
             type="number" 
             min="1" 
