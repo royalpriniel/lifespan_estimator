@@ -68,6 +68,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
         </form>
       ) : (
         <div>
+        <div style={{margin: '1rem 0'}}>
           <h3>Welcome, {userName}.</h3>
           <p>
             You may have about <strong>{results.days}</strong> days, i.e., 
