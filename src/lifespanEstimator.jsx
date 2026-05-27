@@ -5,7 +5,7 @@ const LifespanEstimator = () => {
   const [userAge, setUserAge] = useState('');
   const [results, setResults] = useState(null);
   const [feedback, setFeedback] = useState('');
-
+  const fmtdUserName = userName.replace(/\b\w/g, char => char.toUpperCase()).trim();
   const calculateTimeLeft = (e) => {
     e.preventDefault();
     const age = Number(userAge);
@@ -69,7 +69,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
       ) : (
         <div>
         <div style={{margin: '1rem 0'}}>
-          <h3>Welcome, {userName}.</h3>
+          <h3>Welcome, {fmtdUserName}.</h3>
           <p>
             You may have about <strong>{results.days}</strong> days, i.e., 
             <strong> {results.weeks}</strong> weeks, i.e., 
