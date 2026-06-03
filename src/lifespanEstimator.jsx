@@ -29,16 +29,16 @@ const LifespanEstimator = () => {
      const inputStyle = { borderRadius: '0.5rem', height: '2.5rem', textAlign: 'left', padding: '0.2rem 1rem', boxSizing: 'border-box'};
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '500px' }}>
+    <div className="app-container" style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '500px' }}>
       <h1>Lifespan Estimator</h1>
+      <br />
       <p>
         This is an application that estimates the amount of time you have left on this earth. 
 It assumes that the likely maximum lifespan of most humans is 100 years or highest of all, about 120 years, as proven by well studied statistics and human history, and as stated by the bible.
 However, we work with 100 years as being the maximum lifespan of humans because "100" is a maximum number and even in human history, that has been so for most people.
       </p>
-      <br/>
 
-      <hr/>
+      <hr style={{margin: '2rem 0'}}/>
 
       {!results ? (
         <form onSubmit={calculateTimeLeft}>
@@ -68,7 +68,7 @@ However, we work with 100 years as being the maximum lifespan of humans because 
         </form>
       ) : (
         <div>
-        <div style={{margin: '1rem 0'}}>
+        <div className="result" style={{margin: '1rem 0'}}>
           <h3>Welcome, {fmtdUserName}.</h3>
           <p>
             You may have about <strong>{results.days}</strong> days, i.e., 
@@ -78,9 +78,9 @@ However, we work with 100 years as being the maximum lifespan of humans because 
           </p>
           <p><em>It may not be more. It may even be much less. Use your time wisely.</em></p>
           </div>
-          <hr />
+          <hr style={{margin: '2rem 0'}} />
           
-          <label style={{margin: '2rem 0'}}>How did we do on a scale of 1 to 10? </label>
+          <label style={{margin: '6rem 0'}}>How did we do on a scale of 1 to 10? </label>
           <input 
             type="number" 
             min="1" 
