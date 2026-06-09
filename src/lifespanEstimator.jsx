@@ -5,7 +5,7 @@ const LifespanEstimator = () => {
   const [userAge, setUserAge] = useState('');
   const [results, setResults] = useState(null);
   const [feedback, setFeedback] = useState('');
-  const fmtdUserName = userName.replace(/\b\w/g, char => char.toUpperCase()).trim();
+  const fmtdUserName = userName.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()).trim();
   const calculateTimeLeft = (e) => {
     e.preventDefault();
     const age = Number(userAge);
